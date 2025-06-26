@@ -3,15 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Minha Página de Teste JAM</title>
+    <meta name="jam:team" content="my-team-id-from-dashboard" />
+
     <script type="module" src="https://js.jam.dev/capture.js"></script>
     <script type="module" src="https://js.jam.dev/recorder.js"></script>
-    <meta name="jam:team" content="my-team-id-from-dashboard" />
+
+    <style>
+        /* Apenas alguns estilos básicos para deixar a página mais visualmente agradável */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Olá! Esta é a minha página de teste.</h1>
-    <p>Se o script da JAM estiver funcionando, ele está capturando eventos nesta página.</p>
+    <p>Se a integração com a JAM estiver funcionando, eventos e logs desta página serão capturados.</p>
     <button onclick="alert('Botão clicado!')">Clique em mim</button>
+    <p>Tente interagir com a página, clicar no botão ou abrir o console do navegador para ver os logs sendo registrados (se a gravação estiver ativa).</p>
 
 </body>
 </html>
